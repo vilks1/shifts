@@ -2,22 +2,19 @@ version: '3.1'
 services:
   shifts-app:
     build:
-      context: app
+      context: ./../
+      dockerfile: docker/app/Dockerfile
     ports:
       - 40000:80
     depends_on:
       - shifts-db
-    volumes:
-    - ./../app:/var/www/html
     env_file: .env.app
   shifts-db:
     image: mysql:8.0.20
     command: --default-authentication-plugin=mysql_native_password
-    restart: always
     env_file: .env.mysql
   shifts-adminer:
     image: adminer:4.7.7
-    restart: always
     ports:
       - 40001:8080
     depends_on:
