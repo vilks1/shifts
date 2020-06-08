@@ -1,0 +1,11 @@
+.idea
+
+docker/.env.mysql
+docker/.env.app
+
+app/vendor
+app/_ide_helper.php
+app/Homestead.json
+app/Homestead.yaml
+app/.phpunit.result.cache
+
