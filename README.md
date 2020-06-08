@@ -1,6 +1,11 @@
 # Shifts
 
-Shifts is a app which imports, deletes and searches shifts
+Shifts is a app which imports, deletes and searches shifts. This app is runs uses [Lumen](https://lumen.laravel.com/ "Lumen") to provide stateless API. 
+
+## Runs on 
+* Apache 2.4
+* PHP 7.4.6
+* MySQL 8.0.20
 
 ## Setup commands
 
