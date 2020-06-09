@@ -21,6 +21,9 @@ cp .env.mysql.example .env.mysql
 cp .env.app.example .env.app
 docker-compose up
 
+# start bash in app container
+docker exec -it docker_shifts-app_1 /bin/bash
+
 # run in shifts-app container
 composer install
 php artisan migrate
