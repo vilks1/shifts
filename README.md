@@ -40,6 +40,10 @@ There is an api doc (lists out all API endpoints and has Postman collection for 
 ```
 http://localhost:40000/docs
 ```
+API for shift search supports start, end, area, location GET params. Example:
+```
+http://localhost:40000/shifts?start=2018-10-22T00:00:00%2B01:00&end=2018-10-23T00:00:00%2B01:00&location=Ampleforth Abbey
+```
 Adminer app runs on localhost and on port 40001.
 ```
 http://localhost:40001
